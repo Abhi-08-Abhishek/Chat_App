@@ -30,7 +30,7 @@ app.use(cookieparser());
 // secure url path by providing url
 app.use(
     cors({ // only allow this url to access only other are block
-        origin:["http://localhost:5173" , "http://localhost:5174" ],
+        origin:["https://chat-app-frontend-exw3.onrender.com" ],
         methods:["POST","GET","PUT","DELETE"],
         credentials:true,
     })
