@@ -29,11 +29,7 @@ app.use(cookieparser());
 
 // secure url path by providing url
 app.use(
-    cors({ // only allow this url to access only other are block
-        origin:[process.env.FRONTEND_URL],
-        methods:["POST","GET","PUT","DELETE"],
-        credentials:true,
-    })
+    cors()
 );
 
 // Auth routes for user
