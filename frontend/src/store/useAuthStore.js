@@ -6,7 +6,7 @@ import { useChatStore } from "./useChatStore.js";
 //import axios from "axios";
 
 
-const BASE_URL = "https://chat-app-backend-ia1r.onrender.com";
+const BASE_URL = "https://chat-app-backend-ia1r.onrender.com/";
 
 // zustend initialize
 // empty veriable created after use get set method for operation
