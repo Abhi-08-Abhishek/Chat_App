@@ -29,9 +29,12 @@ app.use(cookieparser());
 
 // secure url path by providing url
 app.use(
-    cors()
+   cors({ // only allow this url to access only other are block
+        origin:["https://chat-app-frontend-exw3.onrender.com/" ],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials:true,
+    })
 );
-
 // Auth routes for user
 app.use('/api/auth', authRoutes);
 
